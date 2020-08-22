@@ -2,3 +2,127 @@
     margin: 0;
     padding: 0;
 }
+body{
+    background-color: rgb(236, 236, 236);
+}
+
+/* SIDEBAR */
+
+aside{
+    width: 15vw;
+    height: 100vh;
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    top: 0;
+    left: 0;
+    background-color: rgb(248, 248, 248);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, .3);
+    align-items: center;
+    z-index: 100;
+}
+.logo-title{
+    width: 90%;
+    height: 8%;
+    border-bottom: 1px solid #d1d1d1;
+    display: flex;
+    margin-bottom: 15px;
+    justify-content: center;
+    align-items: center;
+}
+.logo-title h3{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(114, 26, 122);
+    font-weight: lighter;
+    font-size: 25px;
+}
+
+.sidebar-link{
+    width: 80%;
+    height: 92%;
+    display: flex;
+    flex-direction: column;
+    /* background-color: rosybrown; */
+}
+.link-list{
+    width: 100%;
+    height: 6%;
+    display: flex;
+    border-radius: 4px;
+    align-items: center;
+    margin: 10px 0;
+}
+.dash-active{
+    background-color: rgb(138, 44, 138);
+    box-shadow: 0 5px 30px rgba(138, 44, 138, .5);
+}
+.dash-active a, .dash-active .icon-list i{
+    color: rgb(255, 255, 255)!important;
+}
+.icon-list{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgb(87, 56, 56); */
+}
+.icon-list i{
+    font-size: 20px;
+    color: #979797;
+}
+.link-list a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: lighter;
+    text-decoration: none;
+    color: #383838;
+}
+
+/* CONTENT SECTION */
+
+.content-tbg{
+    width: 100vw;
+    /* background-color: rgb(126, 126, 126); */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.navigasi-content{
+    width: 85%;
+    height: 80px;
+    /* background-color: rgb(255, 255, 255); */
+    display: flex;
+    justify-content: flex-end;
+}
+.nav-right{
+    width: 30%;
+    height: 100%;
+    /* background-color: darkgray; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.wrap-nav-credit{
+    width: 100px;
+    height: 100%;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    /* background-color: darkgreen; */
+}
+.wrap-nav-credit i, .wrap-nav-user i{
+    font-size: 23px;
+    color: rgb(66, 66, 66);
+    text-shadow: 0 5px 20px rgba(0, 0, 0, .3);
+}
+.wrap-nav-user{
+    width: 100px;
+    height: 100%;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    /* background-color: darkgreen; */
+}
